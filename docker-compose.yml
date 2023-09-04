@@ -1,0 +1,15 @@
+version: "3.2"
+services:  
+  ncwms:
+    image: robertdcurrier/ncwms2-gandalf
+    container_name: ncwms-gandalf
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    volumes:
+     - /data/gandalf:/data/gandalf
+     - /etc/letsencrypt:/etc/letsencrypt
+     - ./server.xml:/usr/local/tomcat/conf/server.xml
+     - ./configs/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+     - ./configs/config.xml:/usr/local/tomcat/.ncWMS2/config.xml
+

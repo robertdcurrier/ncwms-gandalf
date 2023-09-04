@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+    <datasets>
+        <dataset id="RTOFS" title="RTOFS" location="/data/gandalf/ncwms/*.nc" queryable="true" downloadable="false" dataReaderClass="" copyrightStatement="" moreInfo="" disabled="false" updateInterval="-1">
+            <variables>
+                <variable id="u:v-mag" title="Magnitude of sea water velocity" description="Magnitude of components: u-veloc. [92.8H] and v-veloc. [92.8H]" palette="psu-inferno" belowMinColor="#FF000000" aboveMaxColor="#FF000000" noDataColor="transparent" numColorBands="250" disabled="false" colorScaleRange="-0.1103 2.342" scaling="linear"/>
+                <variable id="salinity" title="salinity [92.8H]" description="salinity [92.8H]" palette="seq-Blues" belowMinColor="#FF000000" aboveMaxColor="#FF000000" noDataColor="transparent" numColorBands="250" disabled="false" colorScaleRange="4.287 39.63" scaling="linear"/>
+                <variable id="u" title="u-veloc. [92.8H]" description="u-veloc. [92.8H]" palette="default" belowMinColor="#FF000000" aboveMaxColor="#FF000000" noDataColor="transparent" numColorBands="250" disabled="false" colorScaleRange="-1.443 1.972" scaling="linear"/>
+                <variable id="v" title="v-veloc. [92.8H]" description="v-veloc. [92.8H]" palette="default" belowMinColor="#FF000000" aboveMaxColor="#FF000000" noDataColor="transparent" numColorBands="250" disabled="false" colorScaleRange="-1.553 2.128" scaling="linear"/>
+                <variable id="u:v-group" title="sea_water_velocity" description="Vector fields for sea_water_velocity" palette="default" belowMinColor="#FF000000" aboveMaxColor="#FF000000" noDataColor="transparent" numColorBands="250" disabled="false" colorScaleRange="-0.1103 2.342" scaling="linear"/>
+                <variable id="u:v-dir" title="Direction of sea water velocity" description="Direction of components: u-veloc. [92.8H] and v-veloc. [92.8H]" palette="default" belowMinColor="#FF000000" aboveMaxColor="#FF000000" noDataColor="transparent" numColorBands="250" disabled="false" colorScaleRange="-197.9 197.9" scaling="linear"/>
+                <variable id="temperature" title="temp [92.8H]" description="temp [92.8H]" palette="seq-Reds" belowMinColor="#FF000000" aboveMaxColor="#FF000000" noDataColor="transparent" numColorBands="250" disabled="false" colorScaleRange="-3.466 35.28" scaling="linear"/>
+            </variables>
+        </dataset>
+    </datasets>
+    <cache enabled="true">
+        <inMemorySizeMB>512</inMemorySizeMB>
+        <elementLifetimeMinutes>0.0</elementLifetimeMinutes>
+    </cache>
+    <dynamicServices/>
+    <dynamicCache enabled="true">
+        <numberOfDatasets>10</numberOfDatasets>
+        <elementLifetimeMinutes>0.0</elementLifetimeMinutes>
+    </dynamicCache>
+    <contact>
+        <name>Bob Currier</name>
+        <organization>GCOOS</organization>
+        <telephone></telephone>
+        <email>robertdcurrier@tamu.edu</email>
+    </contact>
+    <server>
+        <title>ncWMS Server</title>
+        <allowFeatureInfo>true</allowFeatureInfo>
+        <maxImageWidth>1024</maxImageWidth>
+        <maxImageHeight>1024</maxImageHeight>
+        <abstract></abstract>
+        <keywords></keywords>
+        <url></url>
+        <allowglobalcapabilities>true</allowglobalcapabilities>
+    </server>
+    <crsCodes/>
+</config>
